@@ -10,3 +10,15 @@ Napisany kod autoamtyzacji, który ma na celu sprawdzenie:
 W obu przypadkach przycisk &nbsp; "add to cart" nie wykonuje akcji
 <br/>
 <br/>Rezultaty 3: Użytkownicy którzy są w stanie dodać wszystkie produkty do karty są w stanie zakończyć zamówienie
+<br/><br/>Uwagi do błędnych uzytkowników:
+<br/>
+1. locked_out_user:
+   * dostaje komunikat: Epic sadface: Sorry, this user has been locked out.
+3. problem_user:
+   * zdjęcia produktów są jako psy
+   * W polu od danych zamówenia "Last Name" napisuje "First Name"
+   * Brak możliwości dokończenia zamówienia ponieważ Error: Last Name is required
+5. error_user:
+   * W polu od danych zamówenia "Last Name" nie da się wpisać zawartości
+   * Mimo braku Last Name możemy przejść dalej
+   * Przycisk "Finish" kliknięcie nie wywołuje akcji
