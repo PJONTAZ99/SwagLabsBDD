@@ -1,0 +1,40 @@
+Feature: Login
+
+  Scenario Outline: Logowanie użytkowników
+    Given  I go to login page
+    When I type "<login>" as Username and "secret_sauce" as Password
+    And  I click Login button
+    Then I logged in
+    Examples:
+    |login|
+    |standard_user|
+    |locked_out_user|
+    |problem_user   |
+    |performance_glitch_user|
+    |error_user             |
+    |visual_user            |
+
+    Scenario Outline: Użytkownik dodaje do koszyka wszystkie przedmioty
+      Given I am logged in as "<login>"
+      When I add all products
+      Then I check out cart
+      And I check "6" items
+      Examples:
+      |login|
+      |standard_user|
+      |problem_user   |
+      |performance_glitch_user|
+      |error_user             |
+      |visual_user            |
+
+      Scenario Outline: Użytkownik kończy zakupy
+        Given I am logged in as "<login>" in shop
+        And I have all products in card
+        When Process order
+        Then Finish order
+        Examples:
+        |login|
+        |standard_user|
+        |performance_glitch_user|
+        |visual_user            |
+
