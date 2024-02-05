@@ -13,9 +13,9 @@ W obu przypadkach przycisk &nbsp; "add to cart" nie wykonuje akcji
 <br/><br/>Uwagi do błędnych uzytkowników:
 <br/>
 1. locked_out_user:
-   * dostaje komunikat: Epic sadface: Sorry, this user has been locked out.
+   * Dostaje komunikat: Epic sadface: Sorry, this user has been locked out.
 3. problem_user:
-   * zdjęcia produktów są jako psy
+   * Zdjęcia produktów są jako psy
    * W polu od danych zamówenia "Last Name" napisuje "First Name"
    * Brak możliwości dokończenia zamówienia ponieważ Error: Last Name is required
 5. error_user:
